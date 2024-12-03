@@ -1,0 +1,78 @@
+head{
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: serif;
+}
+
+heading{
+  background-color: slateblue;
+  font: luminari
+  text: center;
+  width: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: serif;
+}
+/*Use both block and floating elements*/
+.navigator {
+  background-color: #333;
+  /*Handle overflow*/
+  overflow: hidden;
+  width: 100%;
+}
+/*Use pseudo classes/elements*/
+.navigator a {
+  /*Create a floated layout*/
+  float: left;
+  color: slateblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+}
+/*Use contextual/attribute selectors*/
+.navigator a:hover {
+  background-color: black;
+  color: slateblue;
+}
+/*Use pseudo classes for hypertext links*/
+.navigator a.active {
+  background-color: purple;
+  color: white;
+}
+/*Format lists, background, and text*/
+ul{
+list-style-position: inside;
+list-style-type: square; 
+}
+
+ol{
+list-style-position: inside;
+list-style-type: upper-roman;  
+}
+
+/*Create a grid layout*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 100px;
+  row-gap: 100px;
+  justify-content: center;
+}
+
+.footer{
+ position: fixed;
+ left: 0px;
+ bottom: 0px;
+ right: 0px; 
+ width: 100%;
+ background-color: purple;
+ color: white;
+ text-align: center;
+}
